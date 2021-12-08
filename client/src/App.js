@@ -8,8 +8,8 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-// Importing allll of the pages that we'll be able to navigate
-// -- but they're sorted by line length.
+// Importing all of the pages that we'll be able to navigate
+// they're sorted by line length.
 import Main from './pages/Main';
 import Login from './pages/Login';
 import Nav from './components/Nav';

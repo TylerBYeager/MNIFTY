@@ -4,7 +4,6 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { useQuery } from '@apollo/client';
 import { QUERY_PRODUCTS } from '../../utils/queries';
-// import { idbPromise } from '../../utils/IndexDB';
 // This isn't imported as "loading" to prevent any potential conflicts
 import loadSymbol from '../../assets/loading.gif';
 

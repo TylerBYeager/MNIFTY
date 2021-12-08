@@ -3,8 +3,8 @@ import Jumbotron from "../components/Jumbotron";
 
 
 
-// we have this "ABSOLUTE MASSIVE UNIT" of an error message
-//  appear if the user hit a weird route.
+// we have an error message
+//  appear if the user hits an invalid route.
 const NoMatch = () => {
   return (
     <div>

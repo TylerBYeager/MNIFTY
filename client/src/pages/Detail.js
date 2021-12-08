@@ -5,7 +5,6 @@ import { useQuery } from "@apollo/client";
 import VanillaTilt from "vanilla-tilt";
 
 import Cart from "../components/Cart";
-// don't current need Cart but will in the future
 
 import { useStoreContext } from "../utils/GlobalState";
 
@@ -60,7 +59,7 @@ function Detail() {
 
     const addToCart = () => {
         const itemInCart = cart.find((cartItem) => cartItem._id === id);
-        // checks to see if an item matching the item's id currently exists in the car, if it does then it will modify the quanty of that item when added
+        // checks to see if an item matching the item's id currently exists in the cart, if it does then it will modify the quanty of that item when added
         if (itemInCart) {
             dispatch({
                 type: UPDATE_CART_QUANTITY,

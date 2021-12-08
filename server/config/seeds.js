@@ -20,7 +20,7 @@ db.once('open', async () => {
     const products = await Product.insertMany([
         {
             name: "Delicate Arch",
-            description: "A picture of Delicate Arch at Arches National Park, just sittin' there... menacingly.",
+            description: "A picture of Delicate Arch at Arches National Park.",
             image: "delicate-arch.png",
             price: 50,
             category: categories[4]._id
@@ -41,7 +41,7 @@ db.once('open', async () => {
         },
         {
             name: "Sam and Bo",
-            description: "'Sami' and his dog bo JUST VIBING at their place of residence, absolutely kickin' it back",
+            description: "'Sam and his dog Bo'",
             image: "sam&bo.png",
             price: 170,
             category: categories[1]._id
@@ -69,28 +69,28 @@ db.once('open', async () => {
         },
         {
             name: "Atlas",
-            description: "meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow",
+            description: "One of our developer's cats.",
             image: "atlas.png",
             price: 120,
             category: categories[0]._id
         },
         {
             name: "Coffee",
-            description: "MMmmmmmm, Cafe' Mocha",
+            description: "Cafe' Mocha",
             image: "coffee.png",
             price: 90,
             category: categories[2]._id
         },
         {
             name: "Bison",
-            description: "Lone Bison at Yellowstone National Park, vibing.",
+            description: "Lone Bison at Yellowstone National Park.",
             image: "bison1.png",
             price: 70,
             category: categories[3]._id
         },
         {
             name: "Two Bison",
-            description: "Two Bison at Yellowstone National Park, both vibing.",
+            description: "Two Bison at Yellowstone National Park.",
             image: "bison.png",
             price: 75,
             category: categories[3]._id
@@ -114,7 +114,7 @@ db.once('open', async () => {
     console.log("products seeded");
 
     await User.deleteMany();
-
+    // seeded accounts not currently working. Speculation is due to a bcrypt issue. 
     await User.insertMany({
         firstName: "May",
         lastName: "Faucher",

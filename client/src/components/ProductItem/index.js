@@ -37,7 +37,6 @@ function ProductItem(item) {
   }
 
 //   returns the visible elements to be displayed.
-// Can I hide the add to cart button when the item is added?
   return (
     <div className="card px-1 py-1 glassCard">
       <Link to={`/products/${_id}`}>
